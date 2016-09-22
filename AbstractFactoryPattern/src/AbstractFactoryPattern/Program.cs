@@ -9,6 +9,14 @@ namespace AbstractFactoryPattern
     {
         public void Main(string[] args)
         {
+            EnemyShipBuilding MakeUFOs = new UFOEnemyShipBuilding();
+
+            EnemyShip theGrunt = MakeUFOs.orderTheShip("UFO");
+            Console.WriteLine( theGrunt + "\n");
+
+            EnemyShip theBoss = MakeUFOs.orderTheShip("UFO Boss");
+            Console.WriteLine(theBoss + "\n");
+
         }
     }
 }
